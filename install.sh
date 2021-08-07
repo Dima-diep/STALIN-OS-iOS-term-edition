@@ -1,5 +1,5 @@
 #!/bin/bash
-apk add python termux-api mpv htop-legacy neofetch -yq
+apk add python termux-api mpv htop-legacy neofetch telegram-cli -yq
 pip install termcolor
 termux-setup-storage
 echo "#!/bin/bash" > /bin/login
