@@ -9,7 +9,8 @@ touch grub.sh
 echo "#!/bin/bash" > grub.sh
 echo "python3 ~/Termux-OS/grub.py" >> grub.sh
 touch termuxos.sh
-echo "python3 ~/Termux-OS/chroot.py" > termuxos.sh
+echo "#!/bin/bash" > termuxos.sh
+echo "python3 ~/Termux-OS/chroot.py" >> termuxos.sh
 chmod 777 termuxos.sh
 chmod 777 grub.sh
 cd -
