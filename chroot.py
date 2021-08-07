@@ -27,7 +27,7 @@ if a == 'Contacts':
         print("Contact for call:")
         c = input()
         os.system(c)
-        os.system("clear && termuxos")
+        os.system("clear && bash termuxos.sh")
     elif b == 'add':
         print("His name?")
         d = input()
@@ -41,12 +41,12 @@ elif a == 'Music':
     os.system("python3 ~/Music-Termux/player.py")
 elif a == 'Terminal':
     os.system("clear && cd ~ && bash")
-    print("For starting OS-menu, run 'termuxos'")
+    print("For starting OS-menu, run 'bash termuxos.sh'")
     print("------------------------------------")
 elif a == 'Package Manager':
     print("Sorry, it will be here later")
     time.sleep(2.5)
-    os.system("clear && termuxos.sh")
+    os.system("clear && bash termuxos.sh")
 elif a == 'Games':
     os.system("apk list | grep games")
     print("Install or play (i/p)")
@@ -56,15 +56,15 @@ elif a == 'Games':
         print("Game for install:")
         g = input()
         os.system("apk add " + g + " -yq")
-        os.system("termuxos")
+        os.system("bash termuxos.sh")
     elif f == 'p':
         print("Game for play:")
         h = input()
         os.system(h)
-        os.system("termuxos")
+        os.system("bash termuxos.sh")
 elif a == 'Taskmgr':
     os.system("htop")
-    os.system("clear && termuxos")
+    os.system("clear && bash termuxos.sh")
 elif a == 'Telegram':
     os.system("telegram-cli")
-    os.system("clear && termuxos")
+    os.system("clear && bash termuxos.sh")
