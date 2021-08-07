@@ -5,15 +5,23 @@ import time
 from termcolor import colored
 
 os.system("clear")
-print("----------------------------")
+print("============================")
 print(colored("Contacts", 'red', 'on_grey'))
-print(colored("Music", 'red', 'on_grey'))
-print(colored("Terminal", 'green', 'on_grey'))
-print(colored("Package Manager (coming soon)", 'blue', 'on_grey'))
-print(colored("Games", 'red', 'on_grey'))
-print(colored("Taskmgr Linux", 'red', 'on_grey'))
-print(colored("Telegram", 'red', 'on_grey'))
 print("----------------------------")
+print(colored("Music", 'red', 'on_grey'))
+print("----------------------------")
+print(colored("Terminal", 'green', 'on_grey'))
+print("----------------------------")
+print(colored("Package Manager (coming soon)", 'blue', 'on_grey'))
+print("----------------------------")
+print(colored("Games", 'red', 'on_grey'))
+print("----------------------------")
+print(colored("Taskmgr Linux", 'red', 'on_grey'))
+print("----------------------------")
+print(colored("Telegram (worked only on arm64)", 'red', 'on_grey'))
+print("----------------------------")
+print(colored("Exit", 'cyan', 'on_grey'))
+print("============================")
 print(colored("Run app:", 'grey', 'on_blue'))
 a = input()
 
@@ -43,6 +51,7 @@ elif a == 'Terminal':
     os.system("clear && cd ~ && bash")
     print("For starting OS-menu, run 'bash termuxos.sh'")
     print("------------------------------------")
+    os.system("PS1=\"\w $ \"")
 elif a == 'Package Manager':
     print("Sorry, it will be here later")
     time.sleep(2.5)
@@ -66,5 +75,26 @@ elif a == 'Taskmgr':
     os.system("htop")
     os.system("clear && bash termuxos.sh")
 elif a == 'Telegram':
-    os.system("telegram-cli")
-    os.system("clear && bash termuxos.sh")
+    print("Do you want install Telegram? y/n")
+    i = input()
+
+    if i == 'y'
+        os.system("apk add telegram-cli -yq && telegram-cli && exit")
+    elif i == 'n'
+        os.system("telegram-cli")
+        os.system("clear && bash termuxos.sh")
+elif a == 'Exit':
+    os.system("clear")
+    print(colored("|==========================|", 'grey', 'on_white'))
+    print(colored("| Where do you want to go? |", 'grey', 'on_white'))
+    print(colored("|++++++++++++++++++++++++++|", 'grey', 'on_white'))
+    print(colored("| 1.GRUB                   |", 'grey', 'on_white'))
+    print(colored("|--------------------------|", 'grey', 'on_white'))
+    print(colored("| 2.Exit from iSH          |", 'grey', 'on_white'))
+    print(colored("|==========================|", 'grey', 'on_white'))
+    j = int(input())
+
+    if j == 1:
+        os.system("clear && login")
+    elif j == 2:
+        os.system("exit")
