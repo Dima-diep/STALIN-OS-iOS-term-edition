@@ -16,4 +16,6 @@ cd -
 touch contacts.txt
 cd ~
 git clone https://github.com/Dima-diep/Music-Termux
+chmod 777 ~/Music-Termux/*
+sh install-ios.sh
 echo "GRUB has been installed. If you want run GRUB from loginned system, run 'bash grub.sh' command"
