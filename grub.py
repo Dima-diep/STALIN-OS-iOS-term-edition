@@ -9,17 +9,19 @@ print("---------------------------------")
 os.system("uname -a")
 print(" ")
 print("Termux GRUB v1.1 by Dima-diep")
-print("Termux-OS v1.1.0 by Dima-diep")
+print("Termux-OS v1.2.0 by Dima-diep")
 print("|=== === === === === === === ===|")
 print("| 1.Termux OS                   |")
 print("| 2.proot-system login          |")
 print("| 3.proot-system installer      |")
+print("| 4.(coming soon)               |")
+print("| 5.exit                        |")
 print("|=== === === === === === === ===|")
 print("Select your system: ")
 a = int(input())
 
 if a == 1:
-    os.system("python3 ~/Termux-OS/login.py")
+    os.system("python3 ~/Termux-OS-iOS/login.py")
     os.system("neofetch")
 
 elif a == 2:
@@ -89,4 +91,11 @@ elif a == 3:
         j = input()
         os.system("proot-distro install " + j)
         os.system("proot-distro login " + j)
-        os.system("exit")
+        os.system("mpv ~/Termux-OS-iOS/exit.mp3 > /dev/null && exit")
+
+elif a == 4:
+    print("Please wait for update Termux-OS")
+    time.sleep(2.5)
+    os.system("clear && login")
+elif a == 5:
+    os.system("exit")
