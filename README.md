@@ -20,3 +20,7 @@ For uninstall, run:
 ```
 $ sh uninstall.sh
 ```
+
+## Some unexist functions:
+
+* ROOT password
