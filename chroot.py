@@ -42,7 +42,7 @@ if a == 'Contacts':
         print("His phone (start +7..)")
         e = input()
         os.system("echo \"alias " + d + "=\"termux-telephony-call " + e + "\" >> ~/.bashrc && echo \"alias " + d + "=\"termux-telephony-call " + e + "\" >> ~/.zshrc && source ~/.bashrc && source ~/.zshrc")
-        os.system("echo \"" + d + e + "\" >> ~/Termux-OS/contacts.txt")
+        os.system("echo \"" + d + e + "\" >> ~/Termux-OS-iOS/contacts.txt")
         os.system("clear && termuxos")
 
 elif a == 'Music':
