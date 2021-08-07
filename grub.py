@@ -4,6 +4,7 @@ import os
 import time
 from termcolor import colored
 
+os.system("clear")
 print("---------------------------------")
 os.system("uname -a")
 print(" ")
