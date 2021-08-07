@@ -9,8 +9,8 @@ try:
     passwd = 'oldpass'
 
     if a == passwd:
-        os.system("python3 ~/Termux-OS/chroot.py")
+        os.system("python3 ~/Termux-OS-iOS/chroot.py")
     elif a != passwd:
-        os.system("python3 ~/Termux-OS/login.py")
+        os.system("python3 ~/Termux-OS-iOS/login.py")
 except KeyboardInterrupt:
-    os.system("python3 ~/Termux-OS/login.py")
+    os.system("python3 ~/Termux-OS-iOS/login.py")
