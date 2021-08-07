@@ -64,3 +64,6 @@ elif a == 'Games':
 elif a == 'Taskmgr':
     os.system("htop")
     os.system("clear && termuxos")
+elif a == 'Telegram':
+    os.system("telegram-cli")
+    os.system("clear && termuxos")
