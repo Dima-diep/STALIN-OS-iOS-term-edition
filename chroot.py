@@ -4,7 +4,7 @@ import os
 import time
 from termcolor import colored
 
-os.system("clear && neofetch && mpv ~/Termux-OS-iOS/login.mp3 && clear")
+os.system("clear && neofetch && mpv ~/Termux-OS-iOS/login.mp3 > /dev/null && clear")
 print("============================")
 print(colored("Contacts", 'red', 'on_grey'))
 print("----------------------------")
@@ -97,4 +97,4 @@ elif a == 'Exit':
     if j == 1:
         os.system("clear && login")
     elif j == 2:
-        os.system("mpv ~/Termux-OS-iOS/exit.mp3 && exit")
+        os.system("mpv ~/Termux-OS-iOS/exit.mp3 > /dev/null && exit")
