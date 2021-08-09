@@ -9,7 +9,7 @@ print("---------------------------------")
 os.system("uname -a")
 print(" ")
 print("Termux GRUB v1.2 by Dima-diep")
-print("Termux-OS-iOS v1.3.0 by Dima-diep")
+print("Termux-OS-iOS v2.1.0 by Dima-diep")
 print("|=== === === === === === === ===|")
 print("| 1.Termux OS                   |")
 print("| 2.proot-system login          |")
@@ -21,8 +21,8 @@ print("Select your system: ")
 a = int(input())
 
 if a == 1:
-    os.system("python3 ~/Termux-OS-iOS/login.py")
-    os.system("python3 ~/Termux-OS-iOS/chroot.py")
+    os.system("python3 ~/Termux-OS/boot/login.py")
+    os.system("python3 ~/Termux-OS/chroot/chroot.py")
 
 elif a == 2:
     os.system("clear")
@@ -40,14 +40,14 @@ elif a == 2:
         print("Mounting " + c + " rootfs...")
         time.sleep(1)
         os.system("atilo pull " + c)
-        os.system("exit")
+        os.system("login")
     elif b == 2:
         print("Your OS: ")
         d = input()
         print("Mounting " + d + " rootfs...")
         time.sleep(1)
         os.system("proot-distro login " + d)
-        os.system("exit")
+        os.system("login")
 elif a == 3:
     os.system("clear")
     print(colored("|=== === === === === === === ===", 'grey', 'on_blue'))
@@ -74,7 +74,7 @@ elif a == 3:
             h = input()
             os.system("atilo pull " + h)
             os.system("atilo run " + h)
-            os.system("exit")
+            os.system("login")
 
         elif g == 'no':
             print("List supported system:")
@@ -83,7 +83,7 @@ elif a == 3:
             i = input()
             os.system("atilo pull " + i)
             os.system("atilo run " + i)
-            os.system("exit")
+            os.system("mpv ~/Termux-OS/boot/exit.mp3 && login")
     elif f == 2:
         os.system("clear && apk add proot proot-distro && clear")
         os.system("proot-distro list")
@@ -91,7 +91,7 @@ elif a == 3:
         j = input()
         os.system("proot-distro install " + j)
         os.system("proot-distro login " + j)
-        os.system("mpv ~/Termux-OS-iOS/exit.mp3 > /dev/null && exit")
+        os.system("mpv ~/Termux-OS/boot/exit.mp3 > /dev/null && login")
 
 elif a == 4:
     print(colored("WARNING! FOR ANY USAGE OF THIS MODE, YOU NEED INITIALIZE IT!, 'yellow', 'on_grey'))"))
@@ -100,7 +100,7 @@ elif a == 4:
         print(" ")
         print(" ")
         print("Your scripts:")
-        os.system("ls ~/Termux-OS-iOS/.recovery")
+        os.system("ls ~/Termux-OS/.recovery")
         print("Run your script:")
         k = input()
         os.system("bash ~/Termux-OS/.recovery/" + k + " && clear && login")
