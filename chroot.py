@@ -35,22 +35,22 @@ if a == 'Contacts':
         print("Contact for call:")
         c = input()
         os.system(c)
-        os.system("clear && python3 ~/Termux-OS/chroot.py")
+        os.system("clear && python3 ~/Termux-OS/chroot/chroot.py")
     elif b == 'add':
         print("His name?")
         d = input()
         print("His phone (start +7..)")
         e = input()
         os.system("echo \"alias " + d + "=\"termux-telephony-call " + e + "\" >> ~/.bashrc && echo \"alias " + d + "=\"termux-telephony-call " + e + "\" >> ~/.zshrc && source ~/.bashrc && source ~/.zshrc")
-        os.system("echo \"" + d + e + "\" >> ~/Termux-OS-iOS/contacts.txt")
-        os.system("clear && python3 ~/Termux-OS/chroot.py")
+        os.system("echo \"" + d + e + "\" >> ~/Termux-OS/chroot/contacts.txt")
+        os.system("clear && python3 ~/Termux-OS/chroot/chroot.py")
 
 elif a == 'Music':
-    os.system("python3 ~/Music-Termux/player.py")
+    os.system("python3 ~/Termux-OS/home/Music-Termux/player.py")
 elif a == 'Package Manager':
     print("Sorry, it will be here later")
     time.sleep(2.5)
-    os.system("clear && bash termuxos.sh")
+    os.system("clear && python3 ~/Termux-OS/chroot/chroot.py")
 elif a == 'Games':
     os.system("apk list | grep games")
     print("Install or play (i/p)")
@@ -60,24 +60,27 @@ elif a == 'Games':
         print("Game for install:")
         g = input()
         os.system("apk add " + g + " -yq")
-        os.system("python3 ~/Termux-OS/chroot.py")
+        os.system("python3 ~/Termux-OS/chroot/chroot.py")
     elif f == 'p':
         print("Game for play:")
         h = input()
         os.system(h)
-        os.system("python3 ~/Termux-OS/chroot.py")
+        os.system("python3 ~/Termux-OS/chroot/chroot.py")
 elif a == 'Taskmgr':
     os.system("htop")
-    os.system("clear && python3 ~/Termux-OS/chroot.py")
+    os.system("clear && python3 ~/Termux-OS/chroot/chroot.py")
 elif a == 'Telegram':
     print("Do you want install Telegram? y/n")
     i = input()
 
     if i == 'y'
-        os.system("apk add telegram-cli -yq && telegram-cli && exit")
+        os.system("apk add telegram-cli -yq && telegram-cli && python3 ~/Termux-OS/chroot/chroot.py")
     elif i == 'n'
         os.system("telegram-cli")
-        os.system("clear && python3 ~/Termux-OS/chroot.py")
+        os.system("clear && python3 ~/Termux-OS/chroot/chroot.py")
+elif a == 'File Manager':
+    os.system("mc")
+    os.system("python3 ~/Termux-OS/chroot/chroot.py")
 elif a == 'Exit':
     os.system("clear")
-    os.system("mpv ~/Termux-OS-iOS/exit.mp3 > /dev/null && kill -9 /home/Termux-OS/chroot.py")
+    os.system("mpv ~/Termux-OS/boot/exit.mp3 > /dev/null && kill -9 /root/Termux-OS/chroot/chroot.py")
