@@ -6,9 +6,9 @@ a = input()
 print("New login:")
 b = input()
 
-with open("~/Termux-OS-iOS/login.py", "r") as f:
+with open("~/Termux-OS/boot/login.py", "r") as f:
     raw = f.read().lower().replace(a, b)
-    file = open("~/Termux-OS-iOS/login.py", "w")
+    file = open("~/Termux-OS/boot/login.py", "w")
     file.write(raw)
     file.close()
     f.close()
