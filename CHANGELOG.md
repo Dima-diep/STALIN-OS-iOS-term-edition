@@ -5,7 +5,7 @@
 * 1.0.0
 * 1.0.1
 * 1.1.1
-
+* 2.0.0
 ## Versions
 
 ### 1.0.0
@@ -29,12 +29,18 @@
 ### 1.1.1
 * Fixed some bugs
 
+### 2.0.0
+* Updated chroot menu
+* Updated GRUB (now v2.0)
+    * Added Recovery Mode
+* Added Package Manager
+
 ## Functions:
 
 ### Example:
 
-* Function ***(version OS when it released)***
-    * Function ***(version OS when it released)***
+* Function ***(version OS when it released)*** *(version function)*
+    * Function ***(version OS when it released)*** *(version function)*
 
 ### List functions
 
@@ -45,3 +51,4 @@
 * Music player ***(1.0.0)***
 * Games ***(1.0.0)***
 * Task Manager Linux ***(1.0.0)***
+* Package Manager ***(2.0.0)*** *(1.0)*
