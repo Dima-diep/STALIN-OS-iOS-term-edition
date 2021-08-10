@@ -11,6 +11,6 @@ try:
     if a == passwd:
         exit
     elif a != passwd:
-        os.system("python3 ~/Termux-OS/boot/login.py")
+        os.system("python3 ~/STALIN-OS/boot/login.py")
 except KeyboardInterrupt:
-    os.system("python3 ~/Termux-OS/boot/login.py")
+    os.system("python3 ~/STALIN-OS/boot/login.py")
