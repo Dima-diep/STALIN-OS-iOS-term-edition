@@ -20,21 +20,21 @@ if a == 1:
     b = input()
 
     if b == 'yes':
-        os.system("bash ~/Termux-OS/system/uninstall.sh")
+        os.system("bash ~/STALIN-OS/system/uninstall.sh")
     elif b == 'no':
-        os.system("python3 ~/Termux-OS/chroot/chroot.py")
+        os.system("python3 ~/STALIN-OS/chroot/chroot.py")
 elif a == 2:
-    os.system("python3 ~/Termux-OS/chroot/chlogin.py")
-    os.system("python3 ~/Termux-OS/chroot/chroot.py")
+    os.system("python3 ~/STALIN-OS/chroot/chlogin.py")
+    os.system("python3 ~/STALIN-OS/chroot/chroot.py")
 elif a == 3:
-    os.system("python3 ~/Termux-OS/chroot/chpass.py")
-    os.system("python3 ~/Termux-OS/chroot/chroot.py")
+    os.system("python3 ~/STALIN-OS/chroot/chpass.py")
+    os.system("python3 ~/STALIN-OS/chroot/chroot.py")
 elif a == 4:
-    os.system("bash ~/Termux-OS/.initialize/initialize.sh")
+    os.system("bash ~/STALIN-OS/.initialize/initialize.sh")
     time.sleep(5)
-    os.system("python3 ~/Termux-OS/chroot/chroot.py")
+    os.system("python3 ~/STALIN-OS/chroot/chroot.py")
 elif a == 5:
-    os.system("python3 ~/Termux-OS/.initialize/initialize.py")
-    os.system("python3 ~/Termux-OS/chroot/chroot.py")
+    os.system("python3 ~/STALIN-OS/.initialize/initialize.py")
+    os.system("python3 ~/STALIN-OS/chroot/chroot.py")
 elif a == 6:
-    os.system("python3 ~/Termux-OS/chroot/chroot.py")
+    os.system("python3 ~/STALIN-OS/chroot/chroot.py")
