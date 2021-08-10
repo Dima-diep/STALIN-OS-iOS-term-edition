@@ -6,6 +6,7 @@
 * 1.0.1
 * 1.1.1
 * 2.0.0
+* 3.0.0
 ## Versions
 
 ### 1.0.0
@@ -34,6 +35,12 @@
 * Updated GRUB (now v2.0)
     * Added Recovery Mode
 * Added Package Manager
+
+### 3.0.0
+* Added Terminal
+* Added Vim Plugin Install
+* Added System menu
+* Removed logout sound
 
 ## Functions:
 
