@@ -2,8 +2,8 @@
 echo "#!/bin/bash" > /bin/login
 echo "cat /etc/motd" >> /bin/login
 echo "bash" >> /bin/login
-cd ~/Termux-OS/home
-rm -rf ~/Termux-OS/home/Music-Termux
+cd ~/STALIN-OS/home
+rm -rf ~/STALIN-OS/home/Music-Termux
 mv * ~/
 cd ~
-rm -rf Termux-OS*
+rm -rf STALIN-OS*
