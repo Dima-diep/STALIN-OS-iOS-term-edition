@@ -50,6 +50,7 @@
 
 ### 3.1.0
 * Added Package Manager
+* Added Calculator
 
 ## Functions:
 
@@ -68,3 +69,4 @@
 * Games ***(1.0.0)***
 * Task Manager Linux ***(1.0.0)***
 * Package Manager ***(3.1.0)*** *(1.0)*
+* Calculator ***(3.1.0)***
