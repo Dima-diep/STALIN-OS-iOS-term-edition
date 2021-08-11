@@ -8,6 +8,8 @@
 * 2.0.0
 * 3.0.0
 * 3.0.1
+* 3.1.0
+
 ## Versions
 
 ### 1.0.0
@@ -46,6 +48,9 @@
 ### 3.0.1
 * Renamed STALIN-OS v3.0.0 to STALIN-OS iOS term-edition v3.0.1
 
+### 3.1.0
+* Added Package Manager
+
 ## Functions:
 
 ### Example:
@@ -62,4 +67,4 @@
 * Music player ***(1.0.0)***
 * Games ***(1.0.0)***
 * Task Manager Linux ***(1.0.0)***
-* Package Manager ***(2.0.0)*** *(1.1)*
+* Package Manager ***(3.1.0)*** *(1.0)*
