@@ -112,20 +112,10 @@ elif a == 4:
         print(colored("WARNING! YOU STARTED RECOVERY MODE! BE CAREFUL BECAUSE YOU CAN DESTROY SYSTEM!", 'yellow', 'on_grey'))
         print(" ")
         print(" ")
-        print(colored("Select your script:", 'cyan', 'on_grey'))
-        l = int(input())
-
-        if l == 1:
-            os.system("bash ~/../.recovery/script1.sh || bash login")
-        elif l == 2:
-            os.system("bash ~/../.recovery/script2.sh || bash login")
-        elif l == 3:
-            os.system("ls ~/../.recovery")
-            print("Run your script:")
-            m = input()
-            os.system("bash ~/../.recovery/" + m + " && clear && login")
-        elif l == 4:
-            os.system("clear && login")
+        os.system("ls ~/STALIN-OS/.recovery")
+        print(colored("Select your bash script:", 'cyan', 'on_grey'))
+        l = input()
+        os.system("sh ~/STALIN-OS/.recovery/" + l)
     else:
         print(colored("WARNING! THE RECOVERY MODE ISN'T INITIALIZED", 'yellow', 'on_grey'))
         time.sleep(2.5)
