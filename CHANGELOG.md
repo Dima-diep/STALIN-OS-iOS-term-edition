@@ -7,6 +7,7 @@
 * 1.1.1
 * 2.0.0
 * 3.0.0
+* 3.0.1
 ## Versions
 
 ### 1.0.0
@@ -42,6 +43,9 @@
 * Added System menu
 * Removed logout sound
 
+### 3.0.1
+* Renamed STALIN-OS v3.0.0 to STALIN-OS iOS term-edition v3.0.1
+
 ## Functions:
 
 ### Example:
@@ -58,4 +62,4 @@
 * Music player ***(1.0.0)***
 * Games ***(1.0.0)***
 * Task Manager Linux ***(1.0.0)***
-* Package Manager ***(2.0.0)*** *(1.0)*
+* Package Manager ***(2.0.0)*** *(1.1)*
