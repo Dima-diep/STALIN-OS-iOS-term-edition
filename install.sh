@@ -2,7 +2,7 @@
 chmod 777 *.py *.sh *.html
 apk update
 apk upgrade
-apk add python termux-api mpv htop-legacy neofetch mc tor libc++ tar wget
+apk add python termux-api mpv htop-legacy neofetch mc tor libc++ tar wget calc
 python3 -m pip install --upgrade pip
 python3 -m pip install termcolor
 termux-setup-storage
