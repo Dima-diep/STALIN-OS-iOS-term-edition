@@ -1,4 +1,4 @@
-# Termux-OS-iOS
+# STALIN-OS-iOS term-edition
 
 OS system = Termux
 
