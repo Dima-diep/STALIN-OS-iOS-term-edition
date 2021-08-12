@@ -21,7 +21,7 @@ mkdir system
 mkdir .initialize
 cd boot
 mkdir bootanimation
-cd ~/STALIN-OS-iOS
+cd ~/STALIN-OS-iOS-term-edition
 mv grub.py ~/STALIN-OS/boot
 mv *.mp3 ~/STALIN-OS/boot
 mv login.py ~/STALIN-OS/boot
