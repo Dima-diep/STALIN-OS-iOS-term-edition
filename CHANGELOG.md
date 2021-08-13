@@ -9,6 +9,7 @@
 * 3.0.0
 * 3.0.1
 * 3.1.0
+* 3.2.0
 
 ## Versions
 
@@ -52,6 +53,10 @@
 * Added Package Manager
 * Added Calculator
 
+### 3.2.0
+* Added Text editor opener
+* Added Network Speed Test
+
 ## Functions:
 
 ### Example:
@@ -70,3 +75,5 @@
 * Task Manager Linux ***(1.0.0)***
 * Package Manager ***(3.1.0)*** *(1.0)*
 * Calculator ***(3.1.0)***
+* Network speed test ***(3.2.0)***
+* Text editor opener ***(3.2.0)***
